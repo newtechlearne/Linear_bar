@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.skill {
+    margin:80px 0 0 0;
+}
+
+.skill-bar {
+    background: #ffe6f0;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-bar span {
+    height: 100%;
+    display: block;
+    background: linear-gradient(90deg, #ff66b3, #ff99cc);
+   
+}
+
+.skill-bar span.html { width: 90%; animation: html 2s ease-out forwards; }
+.skill-bar span.css { width: 75%;  animation: css 2s ease-out forwards;}
+.skill-bar span.javascript { width: 60%; animation: js 2s ease-out forwards; }
+
+@keyframes html{
+    from { width: 0; }
+    to { width: 90%; }
+}
+@keyframes css{
+    from { width: 0; }
+    to { width: 75%; }
+}
+@keyframes js {
+    from { width: 0; }
+    to { width: 60%; }
+}
